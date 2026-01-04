@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
 const fibbonaci = function (n) {
-    if (n === 1) {
+    if (n === 1 || n === 2) {
         return 0;
-    } else if (n === 2) {
-        return 1;
     } else {
         return fibbonaci(n - 1) + fibbonaci(n - 2)
     }
